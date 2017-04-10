@@ -32,7 +32,7 @@ class AUSteve_Awesome_Menus {
 		//Do not filter if the menu class contains the magic word
 		if (strpos($args->menu_class, 'not-awesome')){
 			error_log("Not awesome enough!");
-			return;
+			return $items;
 		}
 
 		//Do the replacement
