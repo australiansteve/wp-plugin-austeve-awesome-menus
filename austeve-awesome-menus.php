@@ -16,6 +16,7 @@ class AUSteve_Awesome_Menus {
 
 	protected $replacements = array (
 		">Cart<" => "><i class='fa fa-shopping-cart fa-austeve' aria-hidden='true'></i><", 
+		">My Account<" => "><i class='fa fa-user fa-austeve' aria-hidden='true'></i><", 
 		">Facebook<" => "><i class='fa fa-facebook-official fa-austeve' aria-hidden='true'></i><", 
 		">Instagram<" => "><i class='fa fa-instagram fa-austeve' aria-hidden='true'></i><", 
 		">Twitter<" => "><i class='fa fa-twitter fa-austeve' aria-hidden='true'></i><", 
