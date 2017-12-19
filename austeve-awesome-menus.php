@@ -25,7 +25,14 @@ class AUSteve_Awesome_Menus {
 
 	function __construct() {
 		add_filter('wp_nav_menu_items', array($this, 'filter_menu_items'), 10, 2 );
+		add_action('wp_enqueue_scripts', array($this, 'include_font_awesome'));
 	}
+
+
+	function include_font_awesome() {
+	    wp_enqueue_script( 'font-awesome-script', 'https://use.fontawesome.com/8365fd1449.js' );
+	}
+
 
 	function filter_menu_items($items, $args) {
 

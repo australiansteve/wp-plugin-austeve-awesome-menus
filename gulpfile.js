@@ -17,11 +17,11 @@ gulp.task('deploy', function() {
 	var files = ['*.php',
 		'*.css'];
 
-	var destThemeDev = 'C:/wamp/www/theme-dev/wp-content/plugins/austeve-awesome-menus';
-	var destCanvas = 'C:/wamp/www/canvas/wp-content/plugins/austeve-awesome-menus';
+	var destSSJ = '/Applications/MAMP/htdocs/ssj/wp-content/plugins/austeve-awesome-menus';
+	var destCanvas = '/Applications/MAMP/htdocs/canvas/wp-content/plugins/austeve-awesome-menus';
 
 	return gulp.src(files, {base:"."})
-    		.pipe(gulpif(argv.canvas, gulp.dest(destCanvas), gulp.dest(destThemeDev)));
+    		.pipe(gulpif(argv.canvas, gulp.dest(destCanvas), gulp.dest(destSSJ)));
 });
 
 // Our default gulp task, which runs all of our tasks upon typing in 'gulp' in Terminal
